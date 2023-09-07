@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000, 400);
+  createCanvas(1000, 700);
   noLoop(); // Makes the artwork static by preventing automatic redraws
 }
 
@@ -9,10 +9,10 @@ function draw() {
   // Draw the trunk
   stroke(100, 0, 100); // Brown color for the trunk
   strokeWeight(5);
-  line(width / 2, height, width / 2, height - 400);
+  line(width / 2, height, width / 2, height - 200);
 
   // Recursively draw branches starting from the top of the trunk
-  drawBranch(width / 2, height - 400, 100, PI / 2, 5);
+  drawBranch(width / 2, height - 100, 100, PI / 2, 5);
 }
 
 function drawBranch(x, y, length, angle, thickness) {
