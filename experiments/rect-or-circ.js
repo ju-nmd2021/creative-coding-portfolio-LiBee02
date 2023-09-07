@@ -29,7 +29,7 @@ function draw() {
 
         // Draw a circle
           // Calculate the x-coordinate for the circle's center
-          let x = i * 50 + 50;
+          let x = i * 50 + 30;
 
           // Calculate the y-coordinate for the circle's center
           let y = j * 40 + 30;
