@@ -1,6 +1,5 @@
 function setup() {
   createCanvas(1000, 1000);
-  noLoop();
   background(255); // Set the background to white
   drawMandala(width / 2, height / 2, 200, 6, 12); // Call drawMandala to create the mandala
 }

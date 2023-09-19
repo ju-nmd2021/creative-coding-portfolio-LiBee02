@@ -30,9 +30,17 @@
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/LiBeez02"
   },
-
+  
   {
-    "file": "experiments/confetti.js",
+    "file": "experiments/interact.js",
+    "name": "Interactive",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+  
+  {
+    "file": "experiments/sound-example.js",
     "name": "NOT DONE",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
