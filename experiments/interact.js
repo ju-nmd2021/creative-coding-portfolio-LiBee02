@@ -17,6 +17,9 @@ function setup() {
   }
 }
 
+// Random x & y position
+//VX & VY = Velocity height and width
+
 function draw() {
   background(220);
   
@@ -28,14 +31,15 @@ function draw() {
     let dy = mouseY - dot.y;
     let distance = sqrt(dx * dx + dy * dy);
     
-    // If the dot is too close to the mouse, avoid it
-    if (distance <100) {
+
+    // If the distance is less than 100px, it adjusts dot's velocity to move away from mouse
+    if (distance <100) { //
       let angle = atan2(dy, dx);
       dot.vx -= cos(angle) * 0.2;
       dot.vy -= sin(angle) * 0.2;
     }
     
-    // Update the dot's position
+    // Updates the dot's position based on its velocity
     dot.x += dot.vx;
     dot.y += dot.vy;
     
