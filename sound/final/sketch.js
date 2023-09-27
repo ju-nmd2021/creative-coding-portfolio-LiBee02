@@ -1,86 +1,62 @@
-let colors = [];
-let shapes = [];
-let images = [];
-let mic, fft;
-let isSpeaking = false;
+// Source code licensed under Apache License 2.0. 
+// Copyright © 2019 William Ngan. (https://github.com/williamngan/pts)
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  mic = new p5.AudioIn();
-  mic.start();
-  fft = new p5.FFT();
-  fft.setInput(mic);
+window.demoDescription = "Microphone demo in Sound guide.";
 
-  // Generate random colors, shapes, and images
-  for (let i = 0; i < 5; i++) {
-    colors.push(color(random(255), random(255), random(255)));
-    shapes.push(new Shape(random(width), random(height)));
-    // Load your images here
-    images.push(loadImage('image' + i + '.jpg'));
-  }
-}
+//// Demo code starts (anonymous function wrapper is optional) ---
 
-function draw() {
-  background(220);
+(function() {
+  
+  Pts.quickStart( "#pt", "#e2e6ef" );
 
-  // Analyze microphone input
-  let spectrum = fft.analyze();
-  let pitch = getPitch(spectrum);
-  let loudness = mic.getLevel();
+  var sound;
+  var recording = false;
+  var rainbow = ["#f03", "#f90", "#fe6", "#3c0", "#0f6", "#03f", "#60f"];
 
-  // Modify art based on microphone input
-  let redness = map(pitch, 100, 1000, 0, 255);
-  let blueness = map(loudness, 0, 0.5, 0, 255);
-
-  // Display shapes and images with modified colors
-  for (let i = 0; i < shapes.length; i++) {
-    shapes[i].display(colors[i]);
-    tint(redness, 0, blueness);
-    image(images[i], random(width), random(height), 200, 200);
-  }
-}
-
-class Shape {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.size = random(20, 100);
-    this.rotation = random(TWO_PI);
-  }
-
-  display(col) {
-    push();
-    fill(col);
-    translate(this.x, this.y);
-    rotate(this.rotation);
-    rect(0, 0, this.size, this.size);
-    pop();
-  }
-}
-
-function getPitch(spectrum) {
-  let maxAmp = 0;
-  let dominantFreq = 0;
-
-  for (let i = 100; i < spectrum.length; i++) {
-    if (spectrum[i] > maxAmp) {
-      maxAmp = spectrum[i];
-      dominantFreq = i;
+  // Draw button
+  function recordButton() {
+    form.fillOnly( recording ? "rgba(0,0,0,.2)" : "#f06").rect( [[0,0], [50,50]] );
+    if (!recording || !sound) {
+      form.fillOnly('#fff').circle( Circle.fromCenter( [25,25], 8 ) );
+    } else {
+      form.fillOnly("#fff").rect( [[18, 18], [32,32]] );
     }
   }
 
-  return map(dominantFreq, 0, spectrum.length, 100, 1000);
-}
-
-// Detect when the user speaks
-function keyPressed() {
-  if (key === ' ') {
-    isSpeaking = true;
+  function toggleRecord() {
+    if ( Geom.withinBound( space.pointer, [0,0], [50,50] ) ) {
+      if (!recording) {
+        Sound.input().then( s => { sound = s.analyze( 128 ); });
+      } else {
+        sound.stop();
+      }
+      recording = !recording;
+    }
   }
-}
+  
+  // animation
+  space.add({
 
-function keyReleased() {
-  if (key === ' ') {
-    isSpeaking = false;
-  }
-}
+    animate: (time, ftime) => {
+      if (sound && sound.playable) {
+        let td = sound.timeDomainTo( space.size );
+        let band = space.size.y/40;
+        rainbow.forEach( (r, i) => {
+          form.strokeOnly( r, band*rainbow.length - i*band ).line(td);  
+        });
+      }
+      recordButton();
+    },
+
+    action: (type, x, y) => {
+      if (type === "up") {
+        toggleRecord();
+      }
+    }
+  });
+
+  //// ----  
+
+  space.bindMouse().bindTouch().play();
+
+})();

@@ -26,7 +26,7 @@ function setup() {
     const y = random(height);
 
     // Generate a random pitch
-    const note = random(["A4", "A2", "F1", "F9", "B4", "C1", "C4"]);
+    const note = random(["C1", "C2", "C3", "A3", "A4", "A1", "A4"]);
 
     // Play the note
     synth.triggerAttackRelease(note, "8n", time);
