@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(1000, 1000);
-  background(255); // Set the background to white
+  background(0); // Set the background to white
   drawMandala(width / 2, height / 2, 200, 6, 12); // Call drawMandala to create the mandala
 }
 
@@ -27,7 +27,7 @@ function drawMandala(x, y, radius, layers, shapes) {
       let y2 = y + sin(angle + PI) * layerRadius;
       
       // Generate a random fill color with transparency
-      let fillColor = color(random(255), random(255), random(255), 150);
+      let fillColor = color(random(255), random(150), random(255), 20);
       
       // Set the fill color and remove stroke (outline)
       fill(fillColor);
@@ -36,8 +36,8 @@ function drawMandala(x, y, radius, layers, shapes) {
       // Begin drawing a shape
       beginShape();
 
-      // Determine the number of points in the shape (between 3 and 8)
-      let numPoints = int(random(10, 200));
+      // Determine the number of points in the shape (between 1 and 39)
+      let numPoints = int(random(1, 40));
 
       // Loop through points in the shape
       for (let i = 0; i < numPoints; i++) {
@@ -57,3 +57,5 @@ function drawMandala(x, y, radius, layers, shapes) {
     }
   }
 }
+
+
