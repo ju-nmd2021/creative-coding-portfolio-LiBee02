@@ -33,16 +33,16 @@
   
   {
     "file": "experiments/interact.js",
-    "name": "Interactive",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "name": "Dots avoids cursor",
+    "description": "",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/LiBeez02"
   },
   
   {
     "file": "experiments/art-moves-cursor.js",
-    "name": "NOT DONE",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "name": "Dots change location when cursor hovers over screen.",
+    "description": "",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/LiBeez02"
   }
