@@ -106,9 +106,6 @@ function draw() {
 }
 
 
-
-
-
 // Helper function to draw a shape with a random number of edges
 function drawRandomShape(x, y, size, edgeCount, strokeColor) {
   const ctx = canvas.getContext('2d');
