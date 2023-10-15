@@ -1,0 +1,50 @@
+[
+  {
+    "file": "experiments/rect-or-circ.js",
+    "name": "Rectangle & Circle Madness",
+    "description": "This project centers around random circles and rectangles going to war on the canvas. There is a 50/50 change of creating a circle or rectangle, making a messy, colorful artwork that changes every time you reresh the website. First i created the canvas, with a random background color ranging from rgb 0-255. Then I decided to put some objects on the canvas, starting with circles in different shapes. I decided that it looked too boring with just white circles, so I did the same as for the background and added random color values to each circle. To make each circle unique and placed randomly, I created a 30/30 grid of shapes, the i in the function calculated the horizontal placement and j for the vertical, all placed between 0-30 in the grid. I also calculated the x and y coordinates for the circles center, making each cirle placing random. The size is also random, due to the diameter of each circle being on a scale from 20-40. All of this was then drawn in the ellipse function. After this, the artwork still looked plain, so I added an else boolen that created random rectangles with the same random attributes as for the circles. I made it so that the rectangles and circles are drawn at a 50/50 chance, creating a chaotic artwork. ",
+    "background": "Inspired by previous artists in p5.js.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+
+  {
+    "file": "experiments/confetti.js",
+    "name": "Confetti",
+    "description": ".",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+
+  {
+    "file": "experiments/color-bomb.js",
+    "name": "Color bomb",
+    "description": "boom",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+
+  {
+    "file": "experiments/branches.js",
+    "name": "Branching out",
+    "description": "its a tree.",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+  
+  {
+    "file": "experiments/interact.js",
+    "name": "Interactive",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "github": "https://www.github.com/LiBeez02"
+  },
+  
+  {
+    "file": "experiments/art-moves-cursor.js",
+    "name": "Art moves faster when cursor moves.",
+    "description": "This project is a component for my final project. Making the art move faster when the cursor hovers over the artwork.",
+    "background": "...",
+    "github": "https://www.github.com/LiBeez02"
+  }
+]
+
