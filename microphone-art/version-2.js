@@ -106,6 +106,7 @@ function draw() {
   }
 }
 
+
 // Animation loop using requestAnimationFrame
 function animate() {
   draw(); // Call the draw function to create generative art

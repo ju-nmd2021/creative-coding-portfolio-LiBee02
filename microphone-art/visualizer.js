@@ -26,7 +26,7 @@ function main(){
     let barWidth = canvas.width/256;
     function createBars(){
         for (let i = 0; i < 256; i++){
-            let color = 'hsl('+ i * 2 +', 100%, 50%';
+            let color = 'hsl('+ i * 2 +', 100%, 50%)';
             bars.push(new Bar(i * barWidth, canvas.height/2, 1, 20, color));
         }
     }
