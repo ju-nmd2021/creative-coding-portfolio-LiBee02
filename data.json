@@ -10,31 +10,30 @@
   {
     "file": "experiments/confetti.js",
     "name": "Confetti",
-    "description": ".",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "description": "This code in p5.js is dedicated to creating dynamic and abstract line art by harnessing randomness. Its core idea revolves around the generation of a continually evolving visual pattern, featuring random lines with varying colors, stroke weights, and directions. The code serves to demonstrate the artistic possibilities of unpredictability, providing a canvas for creative experimentation and spontaneous digital artwork. Its primary purpose is to explore the beauty of chance in generating captivating and dynamic visual compositions, emphasizing the creative expression that emerges from randomness.",
+    "background": "Inspired by previous artists in p5.js & lectures.",
     "github": "https://www.github.com/LiBeez02"
   },
 
   {
     "file": "experiments/color-bomb.js",
     "name": "Color bomb",
-    "description": "boom",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "description": "  This code, implemented in p5.js, is dedicated to producing intricate mandala-like patterns, exemplifying the creative potential of generative art. It systematically arranges layers of shapes with varying points and colors to create symmetrical and captivating designs, offering a canvas for artistic exploration and experimentation. The code's purpose lies in the intersection of mathematical precision and creative randomness, producing unique visual compositions that serve both as artistic expressions and educational tools for understanding generative art, all while showcasing the beauty of symmetry in digital design.    ",
+    "background": "Inspired by: https://www.youtube.com/watch?v=-vPh1548OHM",
     "github": "https://www.github.com/LiBeez02"
   },
 
   {
     "file": "experiments/branches.js",
     "name": "Branching out",
-    "description": "its a tree.",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "description": "This code uses p5.js to create an art piece featuring a recursive tree structure. The main idea is to showcase the concept of recursion, where a central trunk evolves into branching structures that create the appearance of a tree. The purpose is educational, illustrating how recursion can generate complex visuals from simple elements. The implementation uses varying angles and thickness for branches, resulting in an aesthetically pleasing tree-like representation. This code offers an intriguing visual example of recursive programming, serving as a valuable learning tool for understanding this fundamental concept.    ",
+    "background": "Inspired by: https://p5js.org/examples/simulate-recursive-tree.html",
     "github": "https://www.github.com/LiBeez02"
   },
-  
   {
     "file": "experiments/interact.js",
-    "name": "Interactive",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
+    "name": "Balls avoid cursor.",
+    "description": "This code employs p5.js to create an interactive art piece featuring a swarm of dots. The primary concept involves simulating the behavior of individual dots that move around the canvas with random velocities and respond to the mouse's proximity by adjusting their direction to avoid it. The purpose of the code is twofold: it serves as an artistic experiment, showcasing the dynamics of responsive elements, and it provides an educational example of interactive animations. The dots' positions and velocities are continually updated based on their interactions with the mouse, resulting in a visually engaging and dynamic display.",
     "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
     "github": "https://www.github.com/LiBeez02"
   },
@@ -42,8 +41,24 @@
   {
     "file": "experiments/art-moves-cursor.js",
     "name": "Art moves faster when cursor moves.",
-    "description": "This project is a component for my final project. Making the art move faster when the cursor hovers over the artwork.",
-    "background": "...",
+    "description": "This code employs the p5.js library to create an interactive artwork on a canvas, featuring a collection of animated circles. The `Circle` class encapsulates circle properties and behaviors, facilitating object-oriented programming. The circles move randomly within the canvas, bounce off the edges, and change positions when the mouse cursor hovers over the canvas. This implementation showcases the principles of graphical animation, collision detection, and user interaction in a structured, object-oriented manner, resulting in an engaging and dynamic visual experience.",
+    "background": "Inspired by: https://www.youtube.com/watch?v=3QIKmgn6B0k",
+    "github": "https://www.github.com/LiBeez02"
+  },
+  
+  {
+    "file": "experiments/rect-or-circ-2.js",
+    "name": "Variation of Rectangle or Circle Project.",
+    "description": "This code, implemented in p5.js, creates a grid of polygons with randomized colors, shapes, and numbers of edges. The main concept is to demonstrate the artistic potential of generative art, generating visually diverse and colorful patterns. The purpose of the code is artistic exploration, offering a canvas for creative experimentation and aesthetic design. By manipulating random colors and the number of edges for each polygon, the code produces a visually engaging and dynamic composition, highlighting the beauty of randomness in digital art.    ",
+    "background": "Inspired by: https://www.youtube.com/watch?v=76fiD5DvzeQ",
+    "github": "https://www.github.com/LiBeez02"
+  },
+  
+  {
+    "file": "experiments/color-bomb-2.js",
+    "name": "Variation of Color Bomb Project.",
+    "description": "This code utilizes p5.js to create a captivating and colorful mandala-like artwork. Its primary aim is to demonstrate the creative potential of generative art by generating intricate and symmetrical designs comprising layers of shapes with varying points and colors. The system's layered loops and randomness in shape creation enable the creation of diverse and visually appealing patterns. This code serves both as an artistic experiment for creating unique visual compositions and as an educational tool for exploring complex patterns through a blend of systematic and random design.",
+    "background": "Inspired by: https://www.youtube.com/watch?v=-vPh1548OHM",
     "github": "https://www.github.com/LiBeez02"
   }
 ]
